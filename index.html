@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>index</title>
+<meta name="Description" content="SofaSofa（http://sofasofa.io）是致力于机器学习、统计模型、人工智能领域的专业社区。">
+<meta name="Keywords" content="机器学习,Machine Learning,分类,聚类,回归,深度学习,神经网络,统计,人工智能，问答，社区，未解答, Python, Pandas, Numpy, Sklearn, Scikit-learn">
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="resources/bootstrap.css">
+<link rel="icon" href="http://sofasofa.io/assets/images/s_ico.ico">
+
+<script src="resources/httpSubmit.js"></script><script src="resources/jquery.php"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="resources/bootstrap.js"></script>
+
+
+
+<!-- jQuery -->
+<script src="resources/jquery_002.php"></script>
+<script src="resources/bootbox.js"></script>
+<script src="resources/jquery_002.js"></script>
+
+<!-- dataTable -->
+<link rel="stylesheet" href="resources/jquery.css">
+<script src="resources/jquery.js"></script>
+<link rel="stylesheet" href="resources/font-awesome.css">
+<link rel="stylesheet" href="resources/animate.css">
+
+
+<link rel="stylesheet" href="resources/style.css">
+<script src="resources/config.js"></script>
+
+<link rel="stylesheet" href="resources/forum_main.css">
+
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+
+<body>
+
+
+<style>
+.navbar{
+	background-color: #FFFFFF;
+	color: #666666;
+	border-radius: 0px !important;
+	position: absolute;
+	width: 100%;
+	border-bottom: solid 0.5px #EAEEEF;
+}
+.nav-item {
+  margin-left: 0px !important;
+}
+.nav-link{
+	color: #666666 !important;
+  padding: 5px 10px;
+	transition: all 0.3s ease 0s;
+}
+.nav-link:hover{
+	background-color: #F3F3F3;
+}
+</style>
+
+
+<nav class="navbar navbar-light bg-faded">
+  <!-- <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+  	&#9776;
+  </button> -->
+	<div class="container p-x-0">
+
+		<div class="navbar-brand">
+			<h4 class="hidden-sm-down" style="color:#41C48E">
+				<a href="http://sofasofa.io/index.php" style="color:#41C48E;text-decoration: none; font-size: 20px">&nbsp;&nbsp; &nbsp;
+        <img src="resources/green_sofa.png" class="hidden-sm-down" title="SofaSofa-数据科学社区" alt="SofaSofa-数据科学社区" style="height:42px;margin-top:-5px;">
+        </a>
+        &nbsp; &nbsp; &nbsp;
+				<a href="http://sofasofa.io/forum_main.php" style="color:#00B068;text-decoration: none; font-size: 22px"><b>问答</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://sofasofa.io/competitions.php" style="color: #10a9e8;text-decoration: none; font-size: 22px"><b>竞赛</b><span style="font-size: 8px; color: red"><i class="fa fa-circle" aria-hidden="true"></i></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://sofasofa.io/tutorials.php" style="color: #F46A41;text-decoration: none; font-size: 22px"><b>教程</b></a>
+
+      </h4>
+
+      <h4 class="hidden-md-up" style="color:#01B169"><a class="btn_nav_site_mobile" href="javascript:void(0);" style="text-decoration:none;color:#01B169"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;<b>So<span style="color:#0E6A44">fa</span>Sofa.<span style="color: #10a9e8;">io</span></b></a>
+      </h4>
+
+			<!--<span class="hidden-md-up">SofaSofa</span>-->
+		</div>
+
+
+	  <!-- <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2"> -->
+		<div>
+
+			<ul class="nav navbar-nav pull-right">
+									<li class="nav-item">
+						<a class="nav-link signup_btn" href="javascript:void(0);" role="student">
+							<span class="hidden-md-up"><i class="fa fa-user-plus"></i></span>
+							<span class="hidden-sm-down">注册</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link login_btn" href="javascript:void(0);" role="student">
+							<span class="hidden-md-up"><i class="fa fa-sign-in"></i></span>
+							<span class="hidden-sm-down">登录</span>
+						</a>
+					</li>
+							</ul>
+
+			<!-- 搜索 -->
+	    <form id="form_navbar_search" class="hidden-sm-down">
+			  <div class="input-group" style="width:10rem; float:right;">
+		      <input class="form-control" id="input_navbar_search" placeholder="搜索" type="text">
+		      <span class="input-group-btn">
+		        <button class="btn btn-secondary" id="btn_navbar_search" type="submit">
+							<i class="fa fa-search"></i>
+						</button>
+		      </span>
+	      </div>
+	    </form>
+	  </div>
+
+
+	</div>
+
+</nav>
+
+<div class="modal fade" id="logoutModal">
+    <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  	<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">×</span>
+				  <span class="sr-only">Close</span>
+				</button>
+			<span style="font-size:20px" class="modal-title"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; 确认</span>
+		    </div>
+		    <div class="modal-body">
+				<p>您确认要退出登录么？</p>
+		    </div>
+		    <div class="modal-footer">
+				<button type="button" class="btn btn-danger" id="confirm_logout">登出</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+		    </div>
+		</div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="site_nav_Modal">
+    <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  	<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">×</span>
+				  <span class="sr-only">Close</span>
+				</button>
+			<span style="font-size:20px" class="modal-title"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp; 确认</span>
+		    </div>
+		    <div class="modal-body">
+				<p>您确认要退出登录么？</p>
+		    </div>
+		    <div class="modal-footer">
+				<button type="button" class="btn btn-danger" id="confirm_logout">登出</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+		    </div>
+		</div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="nav_site_mobile">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        	<div class="modal-body">
+                <div style="width: 50%; display: block; margin-left:auto; margin-right: auto;">
+                	<span style="font-size: 13px">请带我飞去:</span><br><br>
+                	<a href="http://sofasofa.io/index.php" style="color:#00B068;text-decoration: none;font-size: 18px"><b>问答</b></a>
+       				<br><br>
+        			<a href="http://sofasofa.io/competitions.php" style="color:#20BEFF;text-decoration: none;font-size: 18px"><b>数据竞赛</b></a>
+        			<br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-theme" data-dismiss="modal"><span style="font-size: 13px">回去啦( ͡° ͜ʖ ͡°)</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$(document).on('click', '.btn_nav_site_mobile', function(){
+        $('#nav_site_mobile').modal();
+    });
+
+	$(document).ready(function(){
+
+		$('#logout').click(function(){
+			$('#logoutModal').modal();
+			$(document).on('click', '#confirm_logout', function(){
+				$('#logoutModal').modal('hide');
+
+				$.ajax({
+					type: "get",
+					url: "user_exe.php?action=user_signout",
+					success: function(responseText, statusText) {
+						localStorage.clear();
+						location.reload(true);
+					}
+				});
+			});
+		});
+
+		// 搜索框的变化
+		$('#input_navbar_search').focusin(function() {
+			$(this)
+					.attr('placeholder', '搜索感兴趣的问题或内容')
+				.parent()
+					.animate({width: '17rem'})
+				.find('.btn')
+					.removeClass('btn-secondary')
+					.addClass('btn-success');
+		});
+		$('#input_navbar_search').blur(function() {
+			$(this)
+					.attr('placeholder', '搜索')
+				.parent()
+				.animate({width: '10rem'})
+				.find('.btn')
+					.addClass('btn-secondary')
+					.removeClass('btn-success');
+		});
+
+		// $(document).on('click', '#btn_navbar_search', function() {
+		// 	var term = encodeURIComponent($('#input_navbar_search').val());
+		// 	window.location = 'forum_main_search.php?search=' + term;
+		// });
+
+
+    // 搜索
+    var options_search = {
+  		url: 'public_forum_exe.php?action=main_reply',
+  		type: 'get',
+  		beforeSubmit: function(formData, jqForm, options) {
+  			var term = encodeURIComponent($('#input_navbar_search').val());
+        if (term == '') {
+          bootbox.alert('请输入关键字');
+          return false;
+        } else {
+          window.location = 'forum_main_search.php?search=' + term;
+    			return true;
+        }
+  		},
+  		success: function(responseText, statusText){
+  			return true;
+  		}
+  	};
+  	$('#form_navbar_search').ajaxForm(options_search);
+
+
+	})
+ </script>
+
+
+
+<!--begin 注册-->
+    <form id="form_signup" enctype="multipart/form-data" role="form">
+    <div class="modal fade" id="myModal_signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			    <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					    <span aria-hidden="true">×</span>
+					    <span class="sr-only">Close</span>
+				    </button>
+				    <span style="font-size:20px" class="modal-title" id="myModalLabel"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;欢迎注册SofaSofa！</span>
+			    </div>
+
+
+			    <div class="modal-body">
+    <div class="form-group">
+      <!--<label for="exampleInputName2">邮箱</label>-->
+      <input class="form-control" name="email" id="signup_email" placeholder="请输入您的邮箱" required="" type="email">
+    </div>
+
+		<div class="form-group">
+      <!--<label for="exampleInputName2">用户名</label>-->
+      <input class="form-control" name="username" id="signup_username" placeholder="请输入您的用户名" required="">
+    </div>
+
+
+    <div class="form-group">
+      <!--<label for="exampleInputName2">密码</label>-->
+      <input class="form-control" name="password" id="password" placeholder="请输入密码" required="" type="password">
+    </div>
+
+    <div class="form-group">
+      <!--<label for="exampleInputName2">确认密码</label>-->
+      <input class="form-control" id="password_check" placeholder="请再次输入您的密码" required="" type="password">
+    </div>
+
+    <div class="form-group">
+      <span>请口算并用汉字输入答案('一二三四五六七八九')</span>
+      <input class="form-control" id="verify" name="verify" placeholder="六减一？" required="" type="text">
+    </div>
+
+    注册过啦？请直接<a class="nav-link login_btn" id="new_login_btn" href="javascript:void(0);" role="student"> 登录 </a>吧！
+
+    <hr>
+
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+    <button type="button" class="btn btn-primary" id="confirm_sumbit_signup">
+      <i class="fa fa-check-square-o"></i> 确认
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
+<!--end 注册-->
+
+<!--begin 登录-->
+	<form id="form_login" enctype="multipart/form-data" role="form">
+	<div class="modal fade" id="myModal_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			    <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					    <span aria-hidden="true">×</span>
+					    <span class="sr-only">Close</span>
+				    </button>
+				    <span style="font-size:20px" class="modal-title" id="myModalLabel"><i class="fa fa-hand-spock-o" aria-hidden="true"></i>&nbsp;欢迎回来</span>
+			    </div>
+
+
+			    <div class="modal-body">
+
+
+					<div class="form-group">
+						<!--<label for="exampleInputName2">邮箱</label>-->
+						<input class="form-control" name="email" placeholder="请输入您的邮箱" required="" type="email">
+				    </div>
+
+					<div class="form-group">
+						<!--<label for="exampleInputName2">密码</label>-->
+						<input class="form-control" name="password" placeholder="请输入密码" required="" type="password">
+				    </div>
+
+						还没有注册过？点击<a href="javascript:void(0);" id="new_signup_btn">注册</a>。<br>
+						忘记密码？<a href="javascript:%20void(0);" id="recover_password"><i class="fa fa-unlock"></i> 找回密码</a>。
+			    </div>
+
+			    <div class="modal-footer">
+				    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+				    <button type="submit" class="btn btn-primary">确认</button>
+			    </div>
+
+
+			</div>
+	    </div>
+	</div>
+	</form>
+<!--end 登录-->
+
+
+<!-- 找回密码 -->
+<div class="modal fade" id="myModal_recover_password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				    <span aria-hidden="true">×</span>
+				    <span class="sr-only">Close</span>
+			    </button>
+			    <span style="font-size:20px" class="modal-title" id="myModalLabel">找回密码</span>
+		    </div>
+
+
+		    <div class="modal-body">
+				<div class="row m-a-0">
+					<div class="col-md-8 col-md-offset-2">
+						请输入注册邮箱:（重置密码的邮件可能会在您的垃圾邮箱中）<br>
+						<input class="form-control" id="recover_password_email" type="text">
+					</div>
+				</div>
+		    </div>
+
+		    <div class="modal-footer">
+			    <button type="button" class="btn btn-secondary recover_password_btn" data-dismiss="modal">取消</button>
+			    <button type="button" class="btn btn-primary recover_password_btn" id="confirm_recover_password">确认</button>
+				<i class="fa fa-spinner fa-spin" id="recover_password_busy_icon" hidden=""></i>
+		    </div>
+
+
+		</div>
+  </div>
+</div>
+
+
+
+<script>
+$(document).on('click', '.btn_phone', function(){
+  $('#Phone').modal();
+});
+</script>
+
+<script>
+$(document).ready(function(){
+
+  // 先检查是否在localstorage中有用户信息
+  // 重新登陆
+    if (localStorage["user"]) {
+    $.ajax({
+      type: 'POST',
+      url: 'user_exe.php?action=user_signin_auto',
+      data: {user: localStorage["user"]},
+      success: function (response) {
+        location.reload(true);
+      }
+    });
+  }
+  
+	
+
+	$(document).on('click', '.login_btn', function(){
+		$('#myModal_login').modal();
+	})
+
+	$(document).on('click', '.signup_btn', function(){
+		var role = $(this).attr('role');
+		if(role == 'teacher'){
+			$('#signup_btn_teacher').trigger('click');
+		} else {
+			$('#signup_btn_student').trigger('click');
+		}
+		$('#myModal_signup').modal();
+	})
+
+	$(document).on('click', '#new_signup_btn', function(){
+		$('#myModal_login').modal('hide');
+		$('#myModal_signup').modal();
+	})
+
+	$(document).on('click', '#new_login_btn', function(){
+		$('#myModal_signup').modal('hide');
+		$('#myModal_login').modal();
+	})
+
+
+	var options_login = {
+		url: 'user_exe.php?action=user_signin',
+		type: 'post',
+			beforeSubmit: function(formData, jqForm, options) {
+		    return true;
+		},
+		success: function(response){
+			if(response == 'noexist'){
+				message_alert('error', '此邮箱未注册，请注册后登陆。', 'index.php');
+			} else if (response == 'wrong'){
+				message_alert('error', '密码错误，请重新输入。', '');
+			} else { // 成功登陆
+				localStorage.setItem('user', response);
+				window.location.reload();
+			}
+			return true;
+		}
+	};
+	$('#form_login').ajaxForm(options_login);
+
+
+
+	$(document).ready(function() {
+  $(document).on('click', '#confirm_sumbit_signup', function(){
+
+		if($('#password').val() != $('#password_check').val()){
+			bootbox.alert('两次输入的密码不匹配，请重新输入。');
+		} else if($('#verify').val() != "五") {
+			bootbox.alert('您的验证码错误，请重试。');
+		} else {
+			$.ajax({
+				method: 'POST',
+				url: 'user_exe.php?action=user_signup',
+				data: {name: $('#signup_name').val(), username: $('#signup_username').val(), email: $('#signup_email').val(), school: $('#signup_school').val(), password: $('#password').val()},
+
+				success: function(responseText){
+
+          			// alert(responseText);
+					if(responseText == 'exist'){
+						bootbox.alert('该邮箱已注册，请直接登录。', function(){
+							$('#myModal_login').modal('show');
+						});
+					}
+					else if (responseText.substring(0, 5) == 'Error') {
+						message_alert('error', responseText, '');
+					}
+					else {
+						bootbox.alert('您已成功注册，请登录', function(){
+							$('#myModal_login').modal('show');
+						});
+						$('#myModal_signup').modal('hide');
+					}
+				}
+			});
+		}
+	});
+});
+
+$(document).on('click', '#recover_password', function(){
+	$('#myModal_recover_password').modal();
+	$('#myModal_login').modal('hide');
+});
+
+$(document).on('click', '#confirm_recover_password', function(){
+	var email = $('#recover_password_email').val();
+	$('#recover_password_busy_icon').removeAttr('hidden');
+	$('.recover_password_btn').attr('disabled', '');
+	$.ajax({
+		method: 'POST',
+		url: 'user_exe.php?action=recover_password',
+		data: {email: email},
+		success: function(response){
+      // alert(response);
+			$('#recover_password_busy_icon').attr('hidden', '');
+			$('.recover_password_btn').removeAttr('disabled');
+			//alert(responseText);
+			if(responseText == 'noexist'){
+				message_alert('error', '您输入的账号/密码不存在，请重新输入。', '');
+			} else {
+				message_alert('success', '重置密码邮件已发送，请前往您的邮箱查收', 'forum_main.php');
+			}
+		}
+	});
+});
+
+
+})
+</script>
+
+
+<!---------------------------------------------------------------------------->
+<!-- Google Analytic -->
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92762347-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
+<!---------------------------------------------------------------------------->
+
+
+
+<!-- 第二层的顶栏 -->
+
+<div class="container-fluid">
+  <div class="row" id="navbar2">
+
+    <div class="container p-x-0">
+
+	
+			<a href="http://sofasofa.io/forum_main.php" class="navbar2_btn" id="header2_all">
+				<span style="color:#00B068"><i class="fa fa-list-ol"></i></span> <span class="hidden-sm-down" style="color:#5e5e5e">全部问题</span><span class="hidden-md-up" style="color:#5e5e5e">问题</span></a>
+			<a href="http://sofasofa.io/forum_main_popular.php" class="navbar2_btn hidden-sm-down" id="header2_popular">
+				<span style="color:#00B068"><i class="fa fa-fire"></i></span> <span style="color:#5e5e5e">热门</span></a>
+			<a href="http://sofasofa.io/forum_noanswers.php" class="navbar2_btn hidden-sm-down" id="header2_noanswer">
+				<span style="color:#00B068"><i class="fa fa-question-circle"></i></span> <span style="color:#5e5e5e">未解答</span></a>
+			<a href="http://sofasofa.io/forum_main_tags.php" class="navbar2_btn active" id="header2_tags">
+				<span style="color:#00B068"><i class="fa fa-tags"></i></span> <span class="hidden-sm-down" style="color:#5e5e5e">所有标签</span><span class="hidden-md-up" style="color:#5e5e5e">标签</span></a>
+			<a href="http://sofasofa.io/forum_main_favourite.php" class="navbar2_btn" id="header2_favourite" data-toggle="modal" data-target="#myModal_login">
+				<span style="color:#00B068"><i class="fa fa-star"></i></span> <span class="hidden-sm-down" style="color:#5e5e5e">收藏</span><span class="hidden-md-up" style="color:#5e5e5e">收藏</span></a>
+			<a href="http://sofasofa.io/forum_main.php#new_post_div" class="navbar2_btn hidden-sm-down" id="header2_new_post" data-toggle="modal" data-target="#myModal_login">
+				<span style="color:#00B068"><i class="fa fa-plus-circle"></i></span> <span style="color:#5e5e5e">我要提问</span></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row m-x-0" id="main_row" style="margin-top: 3rem;">
+
+	<div class="col-md-10 col-md-offset-1" id="main_right_content">
+				<br>
+		<h4>我关注的标签</h4>
+		<hr>
+		<div class="row m-x-0">
+		登录之后，添加自己感兴趣的标签。		</div>
+
+
+		<br>
+		<h4>所有标签</h4>
+		<hr>
+
+		
+				<a href="http://sofasofa.io/forum_main.php?f=1000001" class="btn small_btn_warning m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;margin-right:-4px;" target="_blank">
+					<i class="fa fa-tag"></i> 数学
+				</a>
+				<a href="javascript:void(0);" class="btn small_btn_warning m-b btn_like" style="border-left:1px solid #C6C6C6;border-top-left-radius:0px;border-bottom-left-radius:0px;" rowid="1000001" method="like" tag_name="数学">
+							<i class="fa fa-star-o"></i>
+						</a>
+				<br>
+				<div class="row m-x-0">
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000002">
+							高等数学
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000002" tag_name="高等数学" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000003">
+							微积分
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000003" tag_name="微积分" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000004">
+							线性代数
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000004" tag_name="线性代数" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000005">
+							数值计算
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000005" tag_name="数值计算" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000006">
+							概率论
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000006" tag_name="概率论" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000007">
+							随机过程
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000007" tag_name="随机过程" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000008">
+							微分方程
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000008" tag_name="微分方程" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000009">
+							Matlab
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000009" tag_name="Matlab" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000010">
+							Mathematica
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000010" tag_name="Mathematica" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000011">
+							几何
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000011" tag_name="几何" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000012">
+							数理逻辑
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000012" tag_name="数理逻辑" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000013">
+							实分析
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000013" tag_name="实分析" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000014">
+							复分析
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000014" tag_name="复分析" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000015">
+							泛函分析
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000015" tag_name="泛函分析" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000016">
+							拓扑
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000016" tag_name="拓扑" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000017">
+							离散数学
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000017" tag_name="离散数学" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000018">
+							图论与组合数学
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000018" tag_name="图论与组合数学" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000019">
+							抽象代数
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000019" tag_name="抽象代数" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000020">
+							最优化
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000020" tag_name="最优化" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000021">
+							数论
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000021" tag_name="数论" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000022">
+							数学建模
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000022" tag_name="数学建模" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000023">
+							金融数学
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000023" tag_name="金融数学" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000024">
+							趣味数学
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000024" tag_name="趣味数学" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000025">
+							开放问题
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000025" tag_name="开放问题" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div></div>
+				<a href="http://sofasofa.io/forum_main.php?f=1000026" class="btn small_btn_warning m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;margin-right:-4px;" target="_blank">
+					<i class="fa fa-tag"></i> 统计/机器学习
+				</a>
+				<a href="javascript:void(0);" class="btn small_btn_warning m-b btn_like" style="border-left:1px solid #C6C6C6;border-top-left-radius:0px;border-bottom-left-radius:0px;" rowid="1000026" method="like" tag_name="统计/机器学习">
+							<i class="fa fa-star-o"></i>
+						</a>
+				<br>
+				<div class="row m-x-0">
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000027">
+							假设检验
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000027" tag_name="假设检验" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000028">
+							概率分布
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000028" tag_name="概率分布" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000029">
+							抽样方法
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000029" tag_name="抽样方法" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000030">
+							贝叶斯推断
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000030" tag_name="贝叶斯推断" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000031">
+							回归分析
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000031" tag_name="回归分析" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000032">
+							监督式学习
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000032" tag_name="监督式学习" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000033">
+							无监督学习
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000033" tag_name="无监督学习" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000034">
+							半监督学习
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000034" tag_name="半监督学习" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000035">
+							深度学习
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000035" tag_name="深度学习" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000036">
+							自然语言处理
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000036" tag_name="自然语言处理" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000037">
+							推荐系统
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000037" tag_name="推荐系统" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000038">
+							数据预处理
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000038" tag_name="数据预处理" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000039">
+							数据降维
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000039" tag_name="数据降维" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000040">
+							特征选择
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000040" tag_name="特征选择" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000041">
+							模型验证
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000041" tag_name="模型验证" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000042">
+							时间序列
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000042" tag_name="时间序列" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000043">
+							描述性统计
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000043" tag_name="描述性统计" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000044">
+							开放问题
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000044" tag_name="开放问题" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000045">
+							计算机视觉
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000045" tag_name="计算机视觉" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000046">
+							数据可视化
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000046" tag_name="数据可视化" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000047">
+							R
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000047" tag_name="R" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000048">
+							Python
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000048" tag_name="Python" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000049">
+							损失函数
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000049" tag_name="损失函数" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000050">
+							数据竞赛
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000050" tag_name="数据竞赛" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000054">
+							人工神经网络
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000054" tag_name="人工神经网络" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000058">
+							TensorFlow
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000058" tag_name="TensorFlow" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000059">
+							空间信息
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000059" tag_name="空间信息" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div></div>
+				<a href="http://sofasofa.io/forum_main.php?f=1000051" class="btn small_btn_warning m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;margin-right:-4px;" target="_blank">
+					<i class="fa fa-tag"></i> 算法/数据结构
+				</a>
+				<a href="javascript:void(0);" class="btn small_btn_warning m-b btn_like" style="border-left:1px solid #C6C6C6;border-top-left-radius:0px;border-bottom-left-radius:0px;" rowid="1000051" method="like" tag_name="算法/数据结构">
+							<i class="fa fa-star-o"></i>
+						</a>
+				<br>
+				<div class="row m-x-0">
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000052">
+							计算复杂度
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000052" tag_name="计算复杂度" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div>
+					<div class="m-r" style="display:block; float:left; height:3rem; width:10rem;" target="_blank">
+						<a class="small_btn_info m-b" style="border-top-right-radius:0px;border-bottom-right-radius:0px;" href="http://sofasofa.io/forum_main.php?f=1000053">
+							空间复杂度
+						</a>
+						<a class="small_btn_info m-b btn_like" style="border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:1px solid #C6C6C6;" href="javascript:void(0);" rowid="1000053" tag_name="空间复杂度" method="like">
+									<i class="fa fa-star-o"></i>
+								</a>
+					</div></div>
+		<hr>
+		<h5>找不到您需要的标签？</h5>
+		<p>您可以用下表提交，我们十分感谢您宝贵的建议。</p>
+		<input id="tagName" placeholder="新标签名称" class="form-control m-b" style="max-width:30rem;">
+		<textarea class="form-control m-b" id="tagDetail" placeholder="请简述理由，或者对新标签的简单描述" style="max-width:30rem;"></textarea>
+		<a href="javascript:void(0);" class="small_btn_success" id="submit_new_tag_btn"><i class="fa fa-upload"></i> 确认提交</a>
+
+
+	</div>
+
+
+</div>
+
+<br>
+<hr>
+
+
+
+
+<style>
+.footer_row{
+	background-color: #F6F7F9;
+	<!--border-top:3px solid #606060;>
+}
+.footer_links{
+        font-size:0.9rem;
+        color:#004868;
+}
+.footer_links:hover{
+        color:#138F77;
+}
+</style>
+<div class="row m-a-0 footer_row">
+
+	<div class="container p-t-0">
+
+		<div class="row m-a-0 p-t">
+
+			<div class="col-md-3">
+
+			</div>
+
+			<div class="col-md-1">
+				<a href="http://sofasofa.io/page_about.php" style="text-decoration: none">
+					<span style="font-size:0.7rem;color:#8ECCB5;"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>&nbsp;关于我们</span>
+				</a>
+			</div>
+			<div class="col-md-1">
+				<a href="http://sofasofa.io/page_faq.php" style="text-decoration: none">
+					<span style="font-size:0.7rem;color:#8ECCB5;"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;常见问题</span>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="http://sofasofa.io/index.php"><img src="resources/green_sofa_footer.png" style="width:80%"></a>
+			</div>
+			<div class="col-md-1">
+				<a href="http://sofasofa.io/page_terms.php" style="text-decoration: none">
+					<span style="font-size:0.7rem;color:#8ECCB5;"><i class="fa fa-cc" aria-hidden="true"></i>&nbsp;内容许可</span>
+				</a>
+			</div>
+			<div class="col-md-1">
+				<a href="http://sofasofa.io/page_feedback.php" style="text-decoration: none">
+					<span style="font-size:0.7rem;color:#8ECCB5;"><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp;聆听反馈</span>
+				</a>
+			</div>
+
+			<div class="col-md-3">
+
+			</div>
+
+		</div>
+
+		<div class="row text-center m-t" style="font-size:0.7rem;color:#8ECCB5;">
+			© 2017 扬州市对角网络科技有限公司 版权所有.
+<a class="footer_links" href="http://www.miitbeian.gov.cn/" style="font-size:0.7rem;color:#8ECCB5;">苏ICP备16005786号-2</a>
+<br><br>
+		</div>
+
+	</div>
+
+</div>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'assets/js/httpsSubmit.js';
+    }
+    else {
+        bp.src = 'assets/js/httpSubmit.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+<div id="debug"></div>
+
+
+
+
+<script>
+$(document).ready(function(){
+
+$(document).on('click', '#submit_new_tag_btn', function(){
+	var name = $('#tagName').val();
+	var detail = $('#tagDetail').val();
+	$('#submit_new_tag_btn').attr('disabled', '');
+	$('#submit_new_tag_btn').children().first().removeClass('fa-upload').addClass('fa-spin fa-spinner');
+	$.ajax({
+		method: 'POST',
+		url: 'forum_main_tags.php?action=new_tag',
+		data: {name: name, detail: detail},
+		success: function(responseText){
+			$('#submit_new_tag_btn').removeAttr('disabled');
+			$('#submit_new_tag_btn').children().first().removeClass('fa-spin fa-spinner').addClass('fa-upload');
+			//alert(responseText);
+			if(responseText.substring(0, 7) == 'Warning'){
+				alert(responseText);
+			} else {
+				message_alert('success', '新标签已提交审核，感谢您的建议。', 'forum_main_tags.php');
+			}
+		}
+	});
+});
+
+/*$(document).on('click', '.btn_like', function(){
+	var rowid = $(this).attr('rowid');
+	var tag_name = $(this).attr('tag_name');
+
+	$.ajax({
+		method: 'POST',
+		url: 'forum_main_tags.php?action=new_tag',
+		data: {name: name, detail: detail},
+		success: function(responseText){
+			$('#submit_new_tag_btn').removeAttr('disabled');
+			$('#submit_new_tag_btn').children().first().removeClass('fa-spin fa-spinner').addClass('fa-upload');
+			//alert(responseText);
+			if(responseText.substring(0, 7) == 'Warning'){
+				alert(responseText);
+			} else {
+				message_alert('success', '新标签已提交审核，感谢您的建议。', 'forum_main_tags.php');
+			}
+		}
+	});
+});*/
+
+
+// 收藏标签
+$(document).on('click', '.btn_like', function(){
+	var current = $(this);
+	current.children().removeClass('animated rotateIn');
+	var tagid = current.attr('rowid');
+	var method = current.attr('method');
+	if (method == 'like') {
+		current.html('<i class="fa fa-star"></i>');
+		current.attr('method', 'unlike');
+	}
+	else if (method == 'unlike') {
+		current.html('<i class="fa fa-star-o"></i>');
+		current.attr('method', 'like');
+	}
+	current.blur();
+	$.ajax({
+		method: "POST",
+		url: "public_forum_exe.php?action=like_tag",
+		data: {tagid: tagid, method: method},
+		success: function(responseText){
+      if (responseText == 'login_popup') {
+        $('#myModal_login').modal();
+        current.html('<i class="fa fa-star-o"></i>');
+    		current.attr('method', 'like');
+      }
+			//$("#courses_main_row_left_div").html(responseText);
+			//alert(responseText);
+		}
+	});
+	current.children().addClass('animated rotateIn');
+});
+
+});
+</script>
+
+
+
+
+
+</body></html>
